@@ -6,13 +6,13 @@ include 'credentails.php';
 
 try {
 
-    $client = new GuzzleHttp\Client(['base_uri' => 'https://hrmmobile.techaspect.com']);
+    $client = new GuzzleHttp\Client(['base_uri' => 'https://yourdomain.com']);
 
     // Send a request to https://foo.com/root
     $response = $client->request('POST', '/token', [
         'headers' => array(
             "Content-Type" => "application /x-www-form-encoded",
-            "Clientid" => "8er4lt18-opo4xc7u.apps.techaspect.com"
+            "Clientid" => "yourclientid"
             ),
         'form_params' => array(
             'username' => 'shambhu.kumar',
